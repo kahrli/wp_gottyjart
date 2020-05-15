@@ -1,0 +1,50 @@
+:root {
+	--bg-color: #fff;
+	--bg-color__section: #ccccc4;
+	--bg-color__section--gradient: linear-gradient(to right, 
+			var(--bg-color__section), 60%, 
+			var(--bg-color));
+	--link-color: #3c6cb4;
+	--blend-mode: multiply;
+	--text-color: #1f2622;
+	--text-color--dark: #0f1612;
+	--border-color: #eef1f8;
+	--bg-color__caption: #eef1f8;
+	--bg-color--transparent: rgba(255, 255, 255, 0.4);
+	--bg-color__caption--transparent: rgba(238, 238, 238, 0.6);
+	--text-color--accent: #f7490c;
+}
+
+footer {
+	--bg-color: #3b474f;
+	--link-color: #eef1f8;
+	--text-color: #a2a8a7;
+}
+
+.card--shop {
+	--link-color: var(--text-color);
+}
+
+.card--shop .card-subtitle {
+	--text-color: #3c6cb4;
+}
+
+figure,
+.card-header,
+.card-footer {
+	--bg-color: var(--bg-color__caption);
+}
+
+.navbar-toggler,
+.navbar-toggler[aria-expanded="true"] {
+	--bg-color: #eef1f8;
+	--text-color: #727873;
+	--bg-color__navbar-toggler--gradient: 
+		linear-gradient(to bottom, var(--bg-color), #fff);
+}
+
+.bypostauthor {
+	--bg-color__caption: var(--bg-color__section);
+	--bg-color: #eee;
+	--text-color: #0f1612;
+}

@@ -1,0 +1,48 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #242526;
+		--bg-color__section: #1b1c1c;
+		--bg-color__section--gradient: linear-gradient(to right, 
+				var(--bg-color__section), 60%, 
+				var(--bg-color));
+		--link-color: #3c6cb4;
+		--blend-mode: multiply;
+		--text-color: #dbe4ee;
+		--text-color--dark: #ebf4fe;
+		--bg-color--transparent: rgba(36, 37, 38, 0.6);
+		--bg-color__caption: #1b1c1c;
+		--bg-color__caption--transparent: rgba(27, 27, 28, 0.6);
+		--text-color--accent: #f7490c;
+		--border-color: #000;
+	}
+
+	footer {
+		--bg-color: #0f0f10;
+		--link-color: #eef1f8;
+		--text-color: #a2a8a7;
+	}
+
+	.card--shop {
+		--link-color: var(--text-color);
+	}
+
+	figure,
+	.card-header,
+	.card-footer {
+		--bg-color: var(--bg-color__caption);
+	}
+
+	.navbar-toggler,
+	.navbar-toggler[aria-expanded="true"] {
+		--bg-color: #1b1c1c;
+		--text-color: #727873;
+		--bg-color__navbar-toggler--gradient: 
+			linear-gradient(to bottom, var(--bg-color), #242526);
+	}
+	
+	.bypostauthor {
+		--bg-color__caption: var(--bg-color__section);
+		--bg-color: #141516;
+		--text-color: #dbe4ee;
+	}
+}
