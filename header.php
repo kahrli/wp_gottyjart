@@ -66,6 +66,37 @@
 		</div>
 	</nav>
 	
+	<div><ul class="nav"><li class="nav-item"><a class="nav-link" href="/blog/blog-2/">a Blog page</a></li>
+		<li class="nav-item"><a class="nav-link" href="/blog/front-page/">Front Page</a></li>
+		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="/blog/about-2/">About The Tests</a>
+			<ul class="dropdown-menu">
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2">About The Tests</a></li>
+				<div class="dropdown-divider"></div>
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2/page-image-alignment/">Page Image Alignment</a></li>
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2/clearing-floats/">Clearing Floats</a></li>
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2/page-with-comments/">Page with comments</a></li>
+				<li class="nav-item dropdown-item"><a class="nav-link" href="/blog/about-2/page-with-comments-disabled/">Page with comments disabled</a></li>
+			</ul>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="/blog/level-1/">Level 1</a>
+			<ul class="dropdown-menu">
+				<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2/">Level 2</a>
+					<ul class="sub-menu">
+						<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2/level-3/">Level 3</a></li>
+						<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2/level-3a/">Level 3a</a></li>
+						<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2/level-3b/">Level 3b</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2a/">Level 2a</a></li>
+				<li class="nav-item"><a class="nav-link" href="/blog/level-1/level-2b/">Level 2b</a></li>
+			</ul>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="/blog/lorem-ipsum/">Lorem Ipsum</a></li>
+		<li class="nav-item"><a class="nav-link" href="/blog/page-a/">Page A</a></li>
+		<li class="nav-item"><a class="nav-link" href="/blog/page-b/">Page B</a></li>
+	</ul></div>	
+	
 	<header id="brand" class="text-center">
 		<h1>
 			<picture>
