@@ -7,14 +7,14 @@
 	</h3>
 	<div class="card-body">
 	
-	<?php if(is_search()): 
+	<?php 
 	
+	if(is_search()): 
 		$excerpt = preg_replace('/' . get_search_query() . '[s]?/i', '<mark>\0</mark>', get_the_excerpt());
 		echo $excerpt;
-		
-	else: ?>
-	<?php the_excerpt(); ?>
-	<?php endif; ?>
+	else:
+		the_excerpt(); 
+	endif; ?>
 	</div>
 	<div class="card-footer text-muted "><?php the_date(); ?> by <?php the_author_link(); ?><br>
 		<?php comments_number(); ?></div>

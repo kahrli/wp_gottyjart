@@ -1,7 +1,7 @@
-$(window).bind('resize load', function() {
-    if ($(this).width() > 767) {
-        $('.collapse').addClass('show');
+jQuery(window).bind('resize load', function() {
+    if (jQuery(this).width() > 767) {
+        jQuery('.collapse').addClass('show');
     } else {
-        $('.collapse').removeClass('show');
+        jQuery('.collapse').removeClass('show');
     }
 });
