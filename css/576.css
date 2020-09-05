@@ -14,6 +14,11 @@
 			var(--bg-color));
 	}
 	
+	.card--shop:not(#myanimix) .card-footer {
+		background-image: linear-gradient(to left, var(--bg-color__caption), 
+			120px, var(--bg-color), 200px, var(--bg-color));
+	}
+	
 	footer {
 		background-size: auto 80%;
 	}
