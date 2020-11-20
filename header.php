@@ -33,10 +33,9 @@
 	<!-- sticky navigation -->
     <nav id="nav--header" class="navbar sticky-top navbar-expand-md">
 		<div class="container">
-			<a href="<?php echo trailingslashit(get_site_url());?>" class="navbar-brand"><picture>
-				<source srcset="<?php bloginfo('template_directory'); ?>/img/favart.webp" width="36" height="36" type="image/webp">
-				<img src="<?php bloginfo('template_directory'); ?>/img/favart.png" width="36" height="36" alt="GJ.Art">
-			</picture></a>
+			<a href="<?php echo trailingslashit(get_site_url());?>" class="navbar-brand">
+				<?php echo get_template_part('img/inline','favart.svg'); ?>
+			</a>
 			<div class="bd-navbar-nav nav mr-auto order-1">
 				<a href="<?php if(!is_home()) echo trailingslashit(get_site_url()); ?>#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> <span class="d-none d-md-inline">Shop</span></a>
 			  <a href="<?php if(!is_home()) echo trailingslashit(get_site_url()); ?>#blog" class="nav-item nav-link"><i class="fas fa-book"></i> <span class="d-none d-md-inline">Blog</span></a>

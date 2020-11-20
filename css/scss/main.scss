@@ -1,10 +1,12 @@
-$primary: #fff;
+
+
+$primary: #f3f3f3;
 $secondary: #3565a9;
 $accent: #f74908;
 
-$border-lg: 16px;
-$border-md: 8px;
-$border-sm: 4px;
+$lg: 16px;
+$md: 8px;
+$sm: 4px;
 
 :root {
 	--bg-color: #{$primary};
@@ -22,6 +24,23 @@ $border-sm: 4px;
 	--bg-color--transparent: rgba(255, 255, 255, 0.4);
 	--bg-color__caption--transparent: rgba(238, 238, 238, 0.6);
 	--text-color--accent: #f7490c;
+	--text-color--hover: #{scale-color($accent,$lightness:20%)};
+	--shadow__main: #ccc;
+	--shadow__bounce: #fff;
+}
+
+/*==============================================================================
+  Blocks
+  ============================================================================*/
+
+.navbar { 
+	box-shadow: 0px 5px 10px #333;
+	
+	input[type="text"] {
+		border-radius:$sm;
+		box-shadow:$sm $sm $md #ccc inset,
+			-$sm -$sm $sm #fff inset;
+	}
 }
 
 footer {
@@ -30,29 +49,29 @@ footer {
 	--text-color: #{scale-color($secondary,$lightness:30%,$saturation:-50%)};
 }
 
-a:hover {
-	--link-color: #{scale-color($accent,$lightness:20%)};
+/*==============================================================================
+  Elements
+	============================================================================*/
+
+a {
+	&:hover, &:focus {
+		--link-color: var(--text-color--hover);
+		
+		.icon__logo {
+			fill: var(--text-color--hover);
+		}
+	}
 }
 
-.btn-primary:hover {
-	background-color: #{scale-color($accent,$lightness:20%)};
-	border-color: #{scale-color($accent,$lightness:20%)};
-}
-
-#nav--header { 
-	box-shadow: 0px 5px 10px #333;
-}
-
-#nav--header input[type="text"] {
-	border-radius:5px;
-	box-shadow: 5px 5px 10px #ccc inset,
-		-5px -5px 5px #fff inset;
-}
-
-.btn-primary { 
-	box-shadow: 5px 5px 10px #ccc,
-		-5px -5px 10px #fff;
+.btn-primary {
+	box-shadow: $sm $sm $md #ccc,
+		-$sm -$sm $md #fff; /* combining fix */
 	background-color:#{$secondary};
+	
+	&:hover, &:focus {
+		background-color: var(--text-color--hover);
+		border-color: var(--text-color--hover);
+	}
 }
 
 .card-subtitle {
@@ -68,7 +87,7 @@ a:hover {
 	color: var(--link-color);
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active {
 	box-shadow: 5px 5px 10px #{scale-color($secondary,$lightness:-50%)} inset,
 		-5px -5px 10px #{scale-color($secondary,$lightness:50%)} inset;
 }
