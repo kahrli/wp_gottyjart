@@ -1,0 +1,81 @@
+$primary: #fff;
+$secondary: #3565a9;
+$accent: #f74908;
+
+$bg-color: scale-color($primary,$lightness:-85%);
+$bg-color__input: scale-color($bg-color,$lightness:-20%,$alpha:30%);
+$shadow--inner: scale-color($bg-color,$lightness:-50%);
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #{$bg-color};
+		--bg-color__section: #1b1c1c;
+		--bg-color__section--gradient: linear-gradient(to right, 
+				var(--bg-color__section), 60%, 
+				var(--bg-color));
+		--link-color: #{scale-color($secondary,$lightness:25%)};
+		--blend-mode: multiply;
+		--text-color: #{scale-color($secondary,$lightness:85%)};
+		--text-color--dark: #{scale-color($secondary,$lightness:90%)};
+		--bg-color--transparent: rgba(36, 37, 38, 0.6);
+		--bg-color__caption: #1b1c1c;
+		--bg-color__caption--transparent: rgba(27, 27, 28, 0.6);
+		--text-color--accent: #f7490c;
+		--border-color: #000;
+		
+		--bg-color__input: #{$bg-color__input};
+	}
+	
+	#nav--header {
+		box-shadow: 0px 5px 10px #{$shadow--inner};
+	}
+	
+	input[type="text"] {
+		background-color: var(--bg-color__input);
+		border-width: 0;
+		padding: .4em;
+		border-radius:5px;
+		box-shadow: 5px 5px 10px #{$shadow--inner} inset;
+	}
+	
+	#nav--header input[type="text"] {
+		box-shadow: 5px 5px 10px #{$shadow--inner} inset,
+			-5px -5px 5px #{$shadow--inner} inset;
+	}
+	
+	.btn-primary {
+		box-shadow: 5px 5px 10px #{$shadow--inner},
+			-5px -5px 10px #{$shadow--inner};
+	}
+
+	footer {
+		--bg-color: #0f0f10;
+		--link-color: #eef1f8;
+		--text-color: #a2a8a7;
+	}
+
+	.card--shop {
+		--link-color: var(--text-color);
+		box-shadow: -5px -5px 3px #2a2a2a, 8px 8px 3px #222;
+	}
+
+	figure,
+	.card-header,
+	.card-footer {
+		--bg-color: var(--bg-color__caption);
+	}
+
+	.navbar-toggler,
+	.navbar-toggler[aria-expanded="true"] {
+		--bg-color: #1b1c1c;
+		--text-color: #727873;
+		--bg-color__navbar-toggler--gradient: 
+			linear-gradient(to bottom, var(--bg-color), #242526);
+	}
+	
+	.bypostauthor {
+		--bg-color__caption: var(--bg-color__section);
+		--bg-color: #141516;
+		--text-color: #dbe4ee;
+	}
+}
