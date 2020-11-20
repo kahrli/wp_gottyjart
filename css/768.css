@@ -1,20 +1,15 @@
-@media (min-width:768px) {
-	#myanimix {
-		max-width: 300px;
-		min-width: 130px;
-		background-size: 300px;
-		background-position: top -30px center;
-	}
-	
-	#myanimix .card-body {
-		padding-top: 200px; 
-		background-image: linear-gradient(
-			transparent, 150px, 
-			var(--bg-color), 215px, 
-			var(--bg-color));
-	}
-	
-	#nav--header__sub { 
-		display: block; 
-	}
-}
+@media (min-width: 768px) {
+  #myanimix {
+    max-width: 300px;
+    min-width: 130px;
+    background-size: 300px;
+    background-position: top -30px center; }
+
+  #myanimix .card-body {
+    padding-top: 200px;
+    background-image: linear-gradient(transparent, 150px, var(--bg-color), 215px, var(--bg-color)); }
+
+  #nav--header__sub {
+    display: block; } }
+
+/*# sourceMappingURL=768.css.map */

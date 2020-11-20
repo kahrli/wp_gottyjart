@@ -1,25 +1,18 @@
-@media (min-width:576px) {
-	.card--shop:not(#myanimix) {
-		max-width: 300px;
-		min-width: 130px;
-		background-size: 300px;
-		background-position: top -30px center;
-	}
-	
-	.card--shop:not(#myanimix) .card-body {
-		padding-top: 200px; 
-		background-image: linear-gradient(
-			transparent, 150px,
-			var(--bg-color), 215px,
-			var(--bg-color));
-	}
-	
-	.card--shop:not(#myanimix) .card-footer {
-		background-image: linear-gradient(to left, var(--bg-color__caption), 
-			120px, var(--bg-color), 200px, var(--bg-color));
-	}
-	
-	footer {
-		background-size: auto 80%;
-	}
-}
+@media (min-width: 576px) {
+  .card--shop:not(#myanimix) {
+    max-width: 300px;
+    min-width: 130px;
+    background-size: 300px;
+    background-position: top -30px center; }
+
+  .card--shop:not(#myanimix) .card-body {
+    padding-top: 200px;
+    background-image: linear-gradient(transparent, 150px, var(--bg-color), 215px, var(--bg-color)); }
+
+  .card--shop:not(#myanimix) .card-footer {
+    background-image: linear-gradient(to left, var(--bg-color__caption), 120px, var(--bg-color), 200px, var(--bg-color)); }
+
+  footer {
+    background-size: auto 80%; } }
+
+/*# sourceMappingURL=576.css.map */
