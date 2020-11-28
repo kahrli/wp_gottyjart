@@ -48,6 +48,7 @@ a {
 	&:hover, &:focus {
 		--link-color: var(--text-color--hover);
 		
+		/* svg brand icon */
 		.icon__logo {
 			fill: var(--text-color--hover);
 		}
@@ -56,12 +57,13 @@ a {
 
 input[type="text"] {
 	border-radius:$sm;
+	border-color: var(--bg-color);
 	box-shadow:$sm $sm $md var(--shadow__main) inset;
 }
 
 .btn-primary {
-	box-shadow: $sm $sm $md #999,
-		(-$sm) (-$sm) $md #fff;
+	box-shadow: $sm $sm $md var(--shadow__main),
+		(-$sm) (-$sm) $md var(--shadow__bounce);
 	background-color:#{$secondary};
 	border-width: 0;
 	

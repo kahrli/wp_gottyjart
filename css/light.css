@@ -30,16 +30,18 @@ footer {
   Elements
 	============================================================================*/
 a:hover, a:focus {
-  --link-color: var(--text-color--hover); }
+  --link-color: var(--text-color--hover);
+  /* svg brand icon */ }
   a:hover .icon__logo, a:focus .icon__logo {
     fill: var(--text-color--hover); }
 
 input[type="text"] {
   border-radius: 4px;
+  border-color: var(--bg-color);
   box-shadow: 4px 4px 8px var(--shadow__main) inset; }
 
 .btn-primary {
-  box-shadow: 4px 4px 8px #999, -4px -4px 8px #fff;
+  box-shadow: 4px 4px 8px var(--shadow__main), -4px -4px 8px var(--shadow__bounce);
   background-color: #3565a9;
   border-width: 0;
   /* overwrite bootstrap */ }
