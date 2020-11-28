@@ -5,32 +5,29 @@ Description: Theme designed for GottyJ
 Version: 1.0.0
 Tags: art
 */
-
 /* =========================================================================
    General
    ========================================================================= */
-	 
 @font-face {
-	font-family: "Neuropolitical RG";
-	src: url("font/neuropolitical rg.ttf");
-	font-display: swap; 
+  font-family: "Neuropolitical RG";
+  src: url("font/neuropolitical rg.ttf");
+  font-display: swap;
 }
-
 header,
 h1,
 h2,
 h3,
-.navbar { 
-	font-family: "Neuropolitical RG", Helvetica, sans-serif;
-	padding-bottom: 0.5em;
-	color: var(--text-color--dark);
+.navbar {
+  font-family: "Neuropolitical RG", Helvetica, sans-serif;
+  padding-bottom: 0.5em;
+  color: var(--text-color--dark);
 }
 
 h2 {
-	padding-bottom:.7em;
+  padding-bottom: 0.7em;
 }
 
-body, 
+body,
 footer,
 figure,
 .card,
@@ -39,224 +36,222 @@ figure,
 .card-header,
 .card-footer,
 .list-group-item {
-	background: var(--bg-color);
-	color: var(--text-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .list-group-item {
-	border-color: var(--border-color);
+  border-color: var(--border-color);
 }
 
 .list-group-item.active, .btn-primary {
-	background: var(--link-color);
-	color: #fff;
+  background: var(--link-color);
+  color: #fff;
 }
 
 header p {
-	font-size: larger;
-	font-weight: 700;
+  font-size: larger;
+  font-weight: 700;
 }
+
 h2 {
-	font-size:2.2rem;
+  font-size: 2.2rem;
 }
 
 ::selection {
-	color: var(--bg-color);
-	background-color: var(--link-color);
+  color: var(--bg-color);
+  background-color: var(--link-color);
 }
 
 a,
 a:hover {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 body > article,
 body > footer {
-	padding-top: 9em;
-	padding-bottom: 9em; 
+  padding-top: 9em;
+  padding-bottom: 9em;
 }
 
-.card h3 { 
-	font-size: large;
+.card h3 {
+  font-size: large;
 }
 
 .fa-external-link-square-alt {
-	vertical-align: super;
-	font-size: x-small;
+  vertical-align: super;
+  font-size: x-small;
 }
 
-body > article:nth-child(even) {
-	background: var(--bg-color__section--gradient);
+body > article:nth-child(odd) {
+  background: var(--bg-color__section--gradient);
 }
 
 input {
-	background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* =========================================================================
    Bootstrap overrides
 	 ========================================================================= */
-	
 .text-primary {
-	color: var(--text-color--accent) !important;
+  color: var(--text-color--accent) !important;
 }
 
 .card-footer,
 .card-header {
-	border-width: 0;
+  border-width: 0;
 }
 
 .card-img-top {
-	max-height:8rem;
-	object-fit: cover;
+  max-height: 8rem;
+  object-fit: cover;
 }
 
-mark { 
-	padding: 0;
-	color: var(--text-color--accent); 
+mark {
+  padding: 0;
+  color: var(--text-color--accent);
 }
 
 /* =========================================================================
    WordPress overrides
 	 ========================================================================= */
-
 .sticky .card-header {
-	background-color: var(--text-color--accent);
+  background-color: var(--text-color--accent);
 }
 
 .sticky .card-header a {
-	color: var(--bg-color);
+  color: var(--bg-color);
 }
 
 .wp-block-cover-text p:not(.has-text-color) {
-	color: #fff !important;
+  color: #fff !important;
 }
 
-.wp-block-gallery .blocks-gallery-item a + figcaption  {
-	cursor: pointer;
-	pointer-events: none;
-	overflow: hidden !important;
+.wp-block-gallery .blocks-gallery-item a + figcaption {
+  cursor: pointer;
+  pointer-events: none;
+  overflow: hidden !important;
 }
 
 .blog h2 {
-	word-break: break-word;
+  word-break: break-word;
 }
 
 .wp-block-image.is-style-circle-mask {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .wp-block-embed,
 .wp-block-embed__wrapper > iframe {
-	max-width:100%; 
-	word-break: break-word;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .comment-list,
 .comment-list ul {
-	list-style-type: none;
-	padding-left: 0.5rem;
-	
+  list-style-type: none;
+  padding-left: 0.5rem;
 }
 
 .comment-list > li li {
-	border-left: thin gray solid;
-	padding-left: 2rem;
+  border-left: thin gray solid;
+  padding-left: 2rem;
 }
 
 .comment-body {
-	margin-top: 1em;
-	border: thin var(--border-color) solid;
-	border-radius: 0.5em;
-	background-color: var(--bg-color);
+  margin-top: 1em;
+  border: thin var(--border-color) solid;
+  border-radius: 0.5em;
+  background-color: var(--bg-color);
 }
 
 .comment-author,
 .comment-meta,
 .reply {
-	background-color: var(--bg-color__caption); 
+  background-color: var(--bg-color__caption);
 }
 
 .comment-author {
-	padding: 0.5em 0.5em 0 0.5em;
-	border-radius: 0.5em 0.5em 0em 0em;
+  padding: 0.5em 0.5em 0 0.5em;
+  border-radius: 0.5em 0.5em 0em 0em;
 }
 
 .reply,
 .comment-meta {
-	padding: 0.5em;
+  padding: 0.5em;
 }
 
 .reply {
-	margin-top: 1em;
-	border-radius: 0 0 0.5em 0.5em; 
+  margin-top: 1em;
+  border-radius: 0 0 0.5em 0.5em;
 }
 
-#respond { 
-	margin-top: 1em;
+#respond {
+  margin-top: 1em;
 }
 
-.comment-meta { 
-	color: #6c757d;
-	margin-bottom: 1em;
+.comment-meta {
+  color: #6c757d;
+  margin-bottom: 1em;
 }
 
 .comment-body p {
-	padding: 1em; 
+  padding: 1em;
 }
 
 .comment-navigation {
-	margin: 3em; 
+  margin: 3em;
 }
 
 .pingback .comment-body,
-.trackback .comment-body{
-	padding: 0.5em;
+.trackback .comment-body {
+  padding: 0.5em;
 }
 
 .wp-caption {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .aligncenter {
-	text-align: center;
-	margin:auto;
+  text-align: center;
+  margin: auto;
 }
 
 .alignright {
-	text-align:right; 
-	margin-left:auto;
+  text-align: right;
+  margin-left: auto;
 }
 
 img.aligncenter {
-	margin: 0.5em auto;
-	display: block;
+  margin: 0.5em auto;
+  display: block;
 }
 
 img.alignright {
-	margin-left: auto;
-	display: block;
+  margin-left: auto;
+  display: block;
 }
 
 /* =========================================================================
    Navigation
    ========================================================================= */
-	 
 /* Main header image */
 body > header img {
-  max-height: 760px; 
-	min-height: 400px;
-	object-fit: cover; 
-	object-position: right center;
+  max-height: 760px;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: right center;
 }
 
-#nav--header { 
-	background-image: url('img/ponyo.png');
-	background-repeat: no-repeat;
-	background-position: 65% 52%;
-	background-size: auto 6em;
-	background-blend-mode: var(--blend-mode);
-	border-top: thick solid var(--link-color);
+.navbar {
+  background-image: url("img/ponyo.png");
+  background-repeat: no-repeat;
+  background-position: 65% 52%;
+  background-size: auto 6em;
+  background-blend-mode: var(--blend-mode);
+  border-top: thick solid var(--link-color);
+  box-shadow: 0 4px 8px var(--shadow__main);
 }
 
 /**
@@ -267,149 +262,138 @@ body > header img {
  *
  * See .active
  */
-
-#nav--header .nav-link { 
-	display: inline-block; 
-	border-bottom: thick solid transparent; 
+.navbar .nav-link {
+  display: inline-block;
+  border-bottom: thick solid transparent;
 }
 
-#nav--header .active { 
-	display: inline-block; 
-	border-bottom: thick solid var(--link-color); 
+.navbar .active {
+  display: inline-block;
+  border-bottom: thick solid var(--link-color);
 }
 
 /* to align sticky navigation with headers properly */
-:target::before { 
-	display: block; 
-	content: ""; 
-	margin-top: -62px; 
-	padding-top: 62px; 
+:target::before {
+  display: block;
+  content: "";
+  margin-top: -62px;
+  padding-top: 62px;
 }
 
 /* add a pushed in effect to the hamburger */
 .navbar-toggler[aria-expanded="true"] {
-	background-image: var(--bg-color__navbar-toggler--gradient);
-} 
+  background-image: var(--bg-color__navbar-toggler--gradient);
+}
 
 /* make the collapse effect feel less laggy */
-.collapsing { 
-	transform: translateZ(0);
-	transition: 0.3s;
+.collapsing {
+  transform: translateZ(0);
+  transition: 0.3s;
 }
-	
+
 /* =========================================================================
    Section-specific
    ========================================================================= */
 /* Blog
    ========================================================================= */
-
 .blog-post {
-	min-width: 300px;
+  min-width: 300px;
 }
 
 .blog-post .card-header {
-	word-break: break-word;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Make images in blog posts readable. */
 .blog img {
-	max-height: 30vh; 
-	max-width:100%;
-	width: auto; 
-	height: auto; 
+  max-height: 30vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 figure {
-	display: inline-block;
-	margin: .5em;
-	border: thin solid transparent;
+  display: inline-block;
+  margin: .5em;
+  border: thin solid transparent;
 }
 
 figcaption {
-	padding: 1em;
+  padding: 1em;
 }
 
 /* Shop
    ========================================================================= */
-
 .card--shop {
-	border-color: var(--bg-color);
-	background-color: var(--bg-color);
-	background-repeat: no-repeat;
-	background-position: center right -40px;
-	background-size: 250px; 
+  border-color: var(--bg-color);
+  border-width: 0;
+  border-radius: 16px;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-position: center right -40px;
+  background-size: 250px;
+  box-shadow: 4px 4px 8px var(--shadow__main), -4px -4px 8px var(--shadow__bounce);
 }
 
 .card--shop .card-body {
-	background-image: 
-		linear-gradient(to left, 
-			var(--bg-color--transparent), 120px, 
-			var(--bg-color), 200px, 
-			var(--bg-color));
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: linear-gradient(to left, var(--bg-color--transparent), 120px, var(--bg-color), 200px, var(--bg-color));
 }
 
-.card--shop .card-subtitle { 
-	line-height: 80%;
-	color: var(--text-color);
-	letter-spacing: 0.06em;
-	word-spacing: 0.1em;
+.card--shop .card-subtitle {
+  display: none;
 }
 
 .card--shop .card-footer {
-	background-color: transparent;
-	background-image: 
-		linear-gradient(to left, 
-			var(--bg-color__caption--transparent), 120px, 
-			var(--bg-color), 200px, 
-			var(--bg-color));	
+  border-radius: 0 0 16px 16px;
+  background-color: transparent;
+  background-image: linear-gradient(to left, var(--bg-color__caption--transparent), 120px, var(--bg-color), 200px, var(--bg-color));
 }
 
-#square { 
-	background-image: url('img/shop/square.jpg');
+#square {
+  background-image: url("img/shop/square.jpg");
 }
 
-#displate { 
-	background-image: url('img/shop/displate.jpg'); 
+#displate {
+  background-image: url("img/shop/displate.jpg");
 }
 
-#teepublic { 
-	background-image: url('img/shop/teepublic.jpg');
+#teepublic {
+  background-image: url("img/shop/teepublic.jpg");
 }
 
-#myanimix { 
-	background-image: url('img/shop/myanimix.jpg');
+#myanimix {
+  background-image: url("img/shop/myanimix.jpg");
 }
 
 /* Important is set to override the above ID-specific properties */
-@media (max-width:360px) {
-	.card--shop { 
-		background-image: none !important;
-	}
+@media (max-width: 360px) {
+  .card--shop {
+    background-image: none !important;
+  }
 }
-
 /* About
    ========================================================================= */
-	 
 /* Align image with bottom of footer. */
-#about { 
-	padding-bottom: 0; 
+#about {
+  padding-bottom: 0;
 }
 
 #about p {
-	padding-right:1em; 
+  padding-right: 1em;
 }
 
 /* =========================================================================
    Footer
    ========================================================================= */
-	 
 body > footer {
-	background-image: url('img/footer.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: auto 50%;
-	background-blend-mode: multiply;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: url("img/footer.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 50%;
+  background-blend-mode: multiply;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }

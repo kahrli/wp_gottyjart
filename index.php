@@ -2,8 +2,7 @@
 
 <?php if(is_home()): ?>
 	
-<article id="shop">
-	<div class="container">
+<article id="shop" class="container">
 	<h2>Shop</h2>
 	<div class="card-deck justify-content-around">
 		<div class="card card--shop mb-4" id="square" 
@@ -58,7 +57,7 @@
 			</div>
 			<div class="card-footer" itemprop="description">Now selling online merchandise!</div>
 		</div>
-	</div></div>
+	</div>
 </article>
 
 <?php endif; ?>

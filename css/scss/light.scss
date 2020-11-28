@@ -1,6 +1,6 @@
 
 
-$primary: #f3f3f3;
+$primary: #f1f1f1;
 $secondary: #3565a9;
 $accent: #f74908;
 
@@ -20,7 +20,7 @@ $sm: 4px;
 	--text-color--dark: #0f1612;
 	--border-color: #eef1f8;
 	--bg-color__card: #{scale-color($primary,$lightness:-15%)};
-	--bg-color__caption: #eef1f8;
+	--bg-color__caption: #{scale-color(mix($primary,$secondary),$lightness:75%)};
 	--bg-color--transparent: rgba(255, 255, 255, 0.4);
 	--bg-color__caption--transparent: rgba(238, 238, 238, 0.6);
 	--text-color--accent: #f7490c;
@@ -33,20 +33,11 @@ $sm: 4px;
   Blocks
   ============================================================================*/
 
-.navbar { 
-	box-shadow: 0px 5px 10px #333;
-	
-	input[type="text"] {
-		border-radius:$sm;
-		box-shadow:$sm $sm $md #ccc inset,
-			-$sm -$sm $sm #fff inset;
-	}
-}
-
 footer {
-	--bg-color: #{scale-color($secondary,$lightness:-50%,$saturation:-50%)};
-	--link-color: #{scale-color($secondary,$lightness:80%,$saturation:-50%)};
-	--text-color: #{scale-color($secondary,$lightness:30%,$saturation:-50%)};
+	$desat: scale-color($secondary,$saturation:-50%);
+	--bg-color: #{scale-color($desat,$lightness:-50%)};
+	--link-color: #{scale-color($desat,$lightness:80%)};
+	--text-color: #{scale-color($desat,$lightness:30%)};
 }
 
 /*==============================================================================
@@ -63,50 +54,35 @@ a {
 	}
 }
 
+input[type="text"] {
+	border-radius:$sm;
+	box-shadow:$sm $sm $md var(--shadow__main) inset;
+}
+
 .btn-primary {
-	box-shadow: $sm $sm $md #ccc,
-		-$sm -$sm $md #fff; /* combining fix */
+	box-shadow: $sm $sm $md #999,
+		(-$sm) (-$sm) $md #fff;
 	background-color:#{$secondary};
+	border-width: 0;
 	
 	&:hover, &:focus {
 		background-color: var(--text-color--hover);
-		border-color: var(--text-color--hover);
 	}
-}
-
-.card-subtitle {
-	display:none;
-}
-
-.card--shop .card-body {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-.card--shop .card-footer {
-	padding: initial 1.25rem; 
-	color: var(--link-color);
-}
-
-.btn-primary:active {
-	box-shadow: 5px 5px 10px #{scale-color($secondary,$lightness:-50%)} inset,
-		-5px -5px 10px #{scale-color($secondary,$lightness:50%)} inset;
+	/* overwrite bootstrap */
+	&:active, &:not(:disabled):not(.disabled):active {
+		box-shadow: 
+			$sm $sm $md #{scale-color($secondary,$lightness:-20%)} inset,
+			(-$sm) (-$sm) $md #{scale-color($secondary,$lightness:20%)} inset;
+		background-color:#{$secondary};
+	}
 }
 
 .card--shop {
 	--link-color: var(--text-color);
-	box-shadow: 5px 5px 16px #{scale-color($primary,$lightness:-50%)},
-		-5px -5px 16px #{scale-color($primary,$lightness:50%)};
-	border-width:0;
-	border-radius:16px;
 }
 
 .card--shop .card-footer:last-child {
-	border-radius:0 0 16px 16px;
 	--bg-color: inherit;
-}
-
-.card--shop .card-subtitle {
-	--text-color: #3c6cb4;
 }
 
 figure,
