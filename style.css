@@ -338,7 +338,7 @@ figcaption {
 }
 
 .card--shop .card-body {
-  padding-top: 0;
+  padding-top: 2em;
   padding-bottom: 0;
   background-image: linear-gradient(to left, var(--bg-color--transparent), 120px, var(--bg-color), 200px, var(--bg-color));
 }
