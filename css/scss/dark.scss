@@ -22,12 +22,14 @@ $shadow--inner: scale-color($bg-color,$lightness:-50%);
 		--text-color: #{scale-color($secondary,$lightness:85%)};
 		--text-color--dark: #{scale-color($secondary,$lightness:90%)};
 		--bg-color--transparent: rgba(36, 37, 38, 0.6);
-		--bg-color__caption: #{scale-color($bg-color,$lightness:5%,$saturation:5%)};
-		--bg-color__caption--transparent: rgba(27, 27, 28, 0.6);
+		$bg-color__caption: scale-color($bg-color,$lightness:5%,$saturation:5%);
+		--bg-color__caption: #{$bg-color__caption};
+		--bg-color__caption--transparent: #{change-color($bg-color,
+			$alpha:0.6)};
 		--text-color--accent: #f7490c;
 		--border-color: #000;
 		--shadow__main: #{scale-color($bg-color,$lightness:-35%)};
-		--shadow__bounce: #{scale-color($bg-color,$lightness:10%)};
+		--shadow__bounce: #{scale-color($bg-color,$lightness:5%)};
 		--bg-color__input: #{$bg-color__input};
 	}
 
@@ -35,7 +37,7 @@ $shadow--inner: scale-color($bg-color,$lightness:-50%);
 		fill: #ccc;
 	}
 
-	input[type="text"] {
+	input[type="text"],input[type="email"],textarea,textarea:focus {
 		background-color: var(--bg-color__input);
 		color: var(--text-color);
 	}

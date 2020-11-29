@@ -20,9 +20,11 @@ $sm: 4px;
 	--text-color--dark: #0f1612;
 	--border-color: #eef1f8;
 	--bg-color__card: #{scale-color($primary,$lightness:-15%)};
-	--bg-color__caption: #{scale-color(mix($primary,$secondary),$lightness:75%)};
+	$bg-color__caption: scale-color(mix($primary,$secondary),$lightness:75%);
+	--bg-color__caption: #{$bg-color__caption};
 	--bg-color--transparent: rgba(255, 255, 255, 0.4);
-	--bg-color__caption--transparent: rgba(238, 238, 238, 0.6);
+	--bg-color__caption--transparent: #{change-color($primary,
+		$alpha:0.6)};
 	--text-color--accent: #f7490c;
 	--text-color--hover: #{scale-color($accent,$lightness:20%)};
 	--shadow__main: #ccc;
@@ -55,15 +57,9 @@ a {
 	}
 }
 
-input[type="text"] {
-	border-radius:$sm;
-	border-color: var(--bg-color);
-	box-shadow:$sm $sm $md var(--shadow__main) inset;
-}
-
 .btn-primary {
 	box-shadow: $sm $sm $md var(--shadow__main),
-		(-$sm) (-$sm) $md var(--shadow__bounce);
+		(-$sm) (-$sm) $sm var(--shadow__bounce);
 	background-color:#{$secondary};
 	border-width: 0;
 	

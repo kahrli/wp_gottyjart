@@ -12,7 +12,7 @@
   --bg-color__card: #cdcdcd;
   --bg-color__caption: #e4eaf3;
   --bg-color--transparent: rgba(255, 255, 255, 0.4);
-  --bg-color__caption--transparent: rgba(238, 238, 238, 0.6);
+  --bg-color__caption--transparent: rgba(241, 241, 241, 0.6);
   --text-color--accent: #f7490c;
   --text-color--hover: #f96d39;
   --shadow__main: #ccc;
@@ -35,13 +35,8 @@ a:hover, a:focus {
   a:hover .icon__logo, a:focus .icon__logo {
     fill: var(--text-color--hover); }
 
-input[type="text"] {
-  border-radius: 4px;
-  border-color: var(--bg-color);
-  box-shadow: 4px 4px 8px var(--shadow__main) inset; }
-
 .btn-primary {
-  box-shadow: 4px 4px 8px var(--shadow__main), -4px -4px 8px var(--shadow__bounce);
+  box-shadow: 4px 4px 8px var(--shadow__main), -4px -4px 4px var(--shadow__bounce);
   background-color: #3565a9;
   border-width: 0;
   /* overwrite bootstrap */ }
